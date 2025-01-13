@@ -1,0 +1,86 @@
+.hero-image {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: calc(3vw + 2.5vh);
+}
+
+h1 {
+    margin: calc(2vw + 2vh);
+    margin-top: 0;
+    padding-top: calc(4vw + 4vh);
+    text-align: center;
+    color: white;
+    font-size: calc(2vw + 2vh);
+}
+
+h2 {
+    margin: calc(2vw + 1vh);
+    text-align: center;
+    color: white;
+    font-size: calc(2vw + 1vh);
+}
+
+h3 {
+    font-size: calc(1.5vw + 1vh);
+    text-align: center;
+}
+
+.fas {
+    color: white;
+    font-size: calc(1.75vw + 1.5vh);
+
+}
+
+.fa-phone::before {
+    position: relative;
+    top: calc(50% - 1.2vw);
+}
+
+.fa-envelope::before {
+    position: relative;
+    top: calc(50% - 1.2vw);
+}
+
+.header-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-holder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-image {
+    width: calc(2.5vw + 2.5vh);
+}
+
+.social-network-holder {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.social-network-image {
+    width: calc(2.5vw + 2.5vh);
+    margin-left: calc(1vw + 1vh);
+    margin-right: calc(1vw + 1vh);
+    transition: .5s;
+}
+
+.social-network-image:hover {
+    transform: scale(1.2);
+}
+
+.contact-text {
+    text-decoration: none;
+    font-size: calc(1vw + 1vh);
+    color: black;
+    transition: .5s;
+}
+
+.contact-text:hover {
+    color: rgb(216, 178, 72);
+}

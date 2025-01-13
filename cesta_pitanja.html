@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" type="font/woff2" crossorigin="anonymous">
+    <title>Česta pitanja - Orkestar Filipa Miladinovića</title>
+    <link rel="icon" href="img/Logo.ico">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <link rel="stylesheet" href="style_cesta_pitanja.css">
+    <script src="effects.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo.png" class="logo-img" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="img/menu.png" alt="Menu" class="menu-icon" />
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" onmouseover="UnderlineLink('navbarLink1')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink1')">
+                                POČETNA
+                                <div class="underline-link" id="navbarLink1"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="o_nama.html" onmouseover="UnderlineLink('navbarLink2')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink2')">
+                                O NAMA
+                                <div class="underline-link" id="navbarLink2"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="repertoar.html" onmouseover="UnderlineLink('navbarLink3')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink3')">
+                                REPERTOAR
+                                <div class="underline-link" id="navbarLink3"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerija.html" onmouseover="UnderlineLink('navbarLink4')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink4')">
+                                GALERIJA
+                                <div class="underline-link" id="navbarLink4"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="utisci.html" onmouseover="UnderlineLink('navbarLink5')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink5')">
+                                UTISCI
+                                <div class="underline-link" id="navbarLink5"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html" onmouseover="UnderlineLink('navbarLink6')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink6')">
+                                KONTAKT
+                                <div class="underline-link" id="navbarLink6"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onmouseover="UnderlineLink('navbarLink7')"
+                                onmouseleave="DeleteUnderlineLink('navbarLink7')">
+                                ČESTA PITANJA
+                                <div class="underline-link" id="navbarLink7"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END OF HEADER! -->
+
+        <div class="hero-image">
+
+            <h1>ORKESTAR FILIPA MILADINOVIĆA</h1>
+
+            <div class="header-holder">
+                <i class="fa fa-question-circle"></i>
+                <h2>ČESTA PITANJA</h2>
+                <i class="fa fa-question-circle"></i>
+            </div>
+            <p class="description">
+                Za organizovanje proslava bilo kog povoda (venčanje, rodjendan, korporacijska zabava) neophodno je posvetiti pažnju svim detaljiima. Pored restorana, fotografa, dekoracija, najvažnije je odabrati i najbolji <b>bend</b>.
+            </p>
+        </div>
+
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed button-collapse" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            1. Šta karakteriše dobar bend?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <p class="answer-text">Dobar orkestar karakteriše usklađenost, prezicnost i harmonija između različitih instrumenata. Takođe, raznolikost repertoara (<i>domaći i strani</i>), aranžmani, iskustvo muzičara i profesionalna oprema  doprinose kvalitetu orkestarskog izvođenja. Posebno značajno za naš orkestar jesu članovi koji su muzički obrazovani. Sposobnost orkestra da prenese širok spektar emocija i da oduševi publiku dodatno doprinosi njegovom kvalitetu. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed button-collapse" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. Koliko traje naš nastup?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <p class="answer-text">Najčešće trajanje našeg nastupa je oko 8h, s mogućnošću produženja van ugovorene satnice, sve u cilju vesele atmosfere i trenutaka koji se pamte! Važno je napomenuti da orkestar pravi samo jednu <i>pauzu</i> u trajanju od 20 minuta u toku fotografisanja. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed button-collapse" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. Da li su muzičari statični na bini?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body">
+                        <p class="answer-text">Na našim video snimcima možete se uveriti da je većina članova Orkestra Filipa Miladinovića od prvog do zadnjeg trenutka na podijumu za igru, priredjujući pravi muzički spektakl. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed button-collapse" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4. Da li su muzičari licencirani?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                    <div class="card-body">
+                        <p class="answer-text">Svi članovi našeg orkestra poseduju važeće licence za rad, koje su preduslov za sklapanje ugovora o izvodjačkom radu. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed button-collapse" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5. Cena nastupa?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                    <div class="card-body">
+                        <p class="answer-text">Na cenu utiče više faktora. Svakako su to: <i>datum</i> (sezonski mesec, radni dan ili vikend), <i>mesto</i>,  <i>vrsta programa</i>, (programska, poluprogramska, naručivanje), <i>specifični zahtevi</i> (gostovanje nekog pevača i sl.) i <i>ostalo.</i> <br />
+                        Orkestar Filipa Miladinovića je opredeljen za <i>programsku</i> muziku, odnosno izvodjenje unapred dogovorenog repertoara. Za više informacija o ceni slobodno nas kontaktirajte telefonom ili putem društvenih mreža.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER! -->
+
+        <footer>
+            <div class="row">
+
+                <div class="col-md-6 col-6">
+                    <p class="footer-text2">DRUŠTVENE MREŽE</p>
+                    <div class="icons-holder">
+                        <a href="https://www.facebook.com/people/Orkestar-Filipa-Miladinovica/100063084439123"
+                            target="_blank" class="footer-social"><img src="img/facebook.png" alt="Facebook"
+                                class="footer-icons" /></a>
+                        <a href="https://www.instagram.com/orkestarfilipamiladinovica/" target="_blank"
+                            class="footer-social"><img src="img/instagram.png" alt="Instagram"
+                                class="footer-icons" /></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-6">
+                    <p class="footer-text2">KONTAKT</p>
+                    <div class="contact-holder">
+                        <img src="img/mail.png" alt="Mail" class="footer-image2" />
+                        <a class="footer-text21"
+                            href="mailto:orkestarfm@gmail.com">orkestarfm@gmail.com</a>
+                    </div>
+                    <div class="contact-holder">
+                        <img src="img/telephone.png" alt="Mail" class="footer-image2" />
+                        <a class="footer-text21" href="tel:+381644184331">+381 64 4184 331</a>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-6">
+                    <p class="footer-text3">Copyright © 2022 | Orkestar Filipa Miladinovića</p>
+                </div>
+                <div class="col-6">
+                    <p class="footer-text3">Developed by:<a> Violina dizajn</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- END OF FOOTER! -->
+
+    </div>
+</body>
+
+</html>

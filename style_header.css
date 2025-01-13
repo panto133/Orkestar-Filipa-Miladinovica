@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    /* Read next point */
+    unicode-range: U+000-5FF;
+    /* Download only latin glyphs */
+    src: local('Libre Baskerville'), url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap') format('woff2');
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    padding: calc(.5vh + .5vw);
+    background-color: rgb(216, 178, 72);
+    box-shadow: 3px 0 rgba(98, 98, 98, 0.344);
+}
+
+.row {
+    margin: 0;
+}
+
+.navbar-brand {
+    margin-left: calc(2vw + 3vh);
+}
+
+.menu-icon {
+    width: calc(3vw + 2vh);
+}
+
+.logo-img {
+    width: calc(5vw + 2vh);
+    border-radius: 50%;
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+.underline-link {
+    width: 100%;
+    transform: scale(0);
+    transition: .5s;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .navbar {
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-left: calc(3vw + 1vh);
+    }
+
+    header {
+        margin-bottom: calc(5vw + 2vh);
+    }
+
+    .card:hover {
+        transform: scale(1.01);
+    }
+
+    .card {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .navbar {
+        position: absolute;
+        z-index: 10000;
+        top: 0;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-left: calc(3vw + 1vh);
+    }
+
+    header {
+        margin-bottom: calc(5vw + 2vh);
+    }
+}

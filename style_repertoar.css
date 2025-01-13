@@ -1,0 +1,142 @@
+.hero-image {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: calc(3vw + 2.5vh);
+}
+
+h1 {
+    margin: calc(2vw + 2vh);
+    margin-top: 0;
+    padding-top: calc(4vw + 4vh);
+    text-align: center;
+    color: white;
+    font-size: calc(2vw + 2vh);
+}
+
+h2 {
+    margin: calc(2vw + 1vh);
+    text-align: center;
+    color: white;
+    font-size: calc(2vw + 1vh);
+}
+
+.card-body {
+    padding: 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+    font-size: calc(1vw + .75vh);
+    padding: calc(1vw + 1vh);
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-item {
+    font-size: calc(1vw + .5vh);
+}
+
+.dropdown-item:hover {
+    cursor: default;
+}
+
+.dropdown-item:active {
+    background-color: rgb(233, 236, 239);
+    color: black;
+}
+
+.btn:focus,
+.btn:active {
+    box-shadow: none;
+}
+
+.card {
+    border: none;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+    padding: 0;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.linkUp {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 213, 133);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+    padding: 0;
+}
+
+a.linkUp {
+    padding: .5rem;
+}
+
+.linkUp:hover {
+    background-color: rgb(216, 178, 72);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.dropdown-menu {
+    display: block;
+    position: static;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card-header {
+    background-color: rgb(216, 178, 72);
+}
+
+#accordion {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(1vw + 1vh);
+}
+
+.header-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-music {
+    color: white;
+    font-size: calc(1.75vw + 1.5vh);
+
+}
+
+.fa-music::before {
+    position: relative;
+    top: calc(50% - 1.2vw);
+}
+
+.button-collapse {
+    width: 100%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown-item {
+        font-size: calc(1.5vw + 1vh);
+    }
+    .btn {
+        font-size: calc(1.5vw + 1.25vh);
+    }
+}
